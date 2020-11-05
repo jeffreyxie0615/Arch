@@ -10,3 +10,4 @@ echo "The Directory Specified Was Not Found"
 fi
 }
 alias cs='cd1'
+alias mixup="wal -i /home/jeffrey/Pictures/Wallpapers"
