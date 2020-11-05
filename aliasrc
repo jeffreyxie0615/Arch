@@ -1,0 +1,12 @@
+alias vvifm="/home/jeffrey/.config/vifm/scripts/vifmrun"
+cd1()
+{
+if [ -z "$1" ]; then
+cd ~ && ls
+elif [ -d "$@" ]; then
+cd "$@" && ls -a
+else
+echo "The Directory Specified Was Not Found"
+fi
+}
+alias cs='cd1'
