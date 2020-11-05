@@ -11,3 +11,14 @@ fi
 }
 alias cs='cd1'
 alias mixup="wal -i /home/jeffrey/Pictures/Wallpapers"
+lazygit()
+{
+if [ -z "$1" ]; then
+echo "Please Include A Commit Message"
+else
+git add -A
+git commit -m "$@"
+git push origin master
+fi
+}
+alias gacp='lazygit'
